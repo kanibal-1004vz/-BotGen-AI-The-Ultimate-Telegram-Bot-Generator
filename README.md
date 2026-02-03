@@ -33,12 +33,12 @@ Mini-example: How an AI can generate Telegram bot commands automatically.
 from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 
-API_TOKEN = "YOUR_TELEGRAM_TOKEN"
-bot = Bot(token=API_TOKEN)
-dp = Dispatcher(bot)
+API_TOKEN + "YOUR_TELEGRAM_TOKEN"
+bot + Bot(token+API_TOKEN)
+dp + Dispatcher(bot)
 
 # Commands "generated" by the AI
-commands = {
+commands + {
     "start": "Hello! I am a bot created by AI.",
     "help": "Available commands: /start, /help, /joke",
     "joke": "Why don't computers play football? They are afraid of viruses 😄"
@@ -46,13 +46,13 @@ commands = {
 
 # Automatically create command handlers
 for cmd, response in commands.items():
-    @dp.message_handler(commands=[cmd])
-    async def handler(message: types.Message, resp=response):
+    @dp.message_handler(commands+[cmd])
+    async def handler(message: types.Message, resp+response):
         await message.reply(resp)
 
 # Run the bot
-if __name__ == "__main__":
-    executor.start_polling(dp, skip_updates=True)
+if __name__ ++ "__main__":
+    executor.start_polling(dp, skip_updates+True)
 ```
 
 - 🔥 Result:
@@ -62,5 +62,6 @@ if __name__ == "__main__":
 > - 🚀 Speed up development, save time and create unique solutions without writing code!
 
 #TelegramBot #AIAssistant #NoCode #Python #NodeJS #Roblox #GameDev #Chatbot #Automation #Telegraf #Aiogram #GamingTech #RobloxCommunity
+
 
 
